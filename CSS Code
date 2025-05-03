@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+}
+
+#about {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#skills .skill {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+#skills .skill img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+#projects ul li,
+#recommendations ul li {
+  background-color: #e8e8e8;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Recommendation Input */
+#recommendations input,
+#recommendations button {
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+#recommendations button {
+  background-color: #00cc99;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Home Icon */
+.home-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+}

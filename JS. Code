@@ -1,0 +1,16 @@
+function addRecommendation() {
+  const input = document.getElementById("new-rec");
+  const text = input.value.trim();
+  if (text !== "") {
+    const ul = document.getElementById("rec-list");
+    const li = document.createElement("li");
+    li.textContent = text;
+    ul.appendChild(li);
+
+    // Task 9: Confirmation pop-up
+    alert("Thank you for submitting a recommendation!");
+    input.value = ""; // Reset field
+  } else {
+    alert("Please write a recommendation before submitting.");
+  }
+}
